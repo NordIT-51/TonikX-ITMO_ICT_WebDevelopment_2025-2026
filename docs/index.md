@@ -1,6 +1,6 @@
-# Отчёт по лабораторной работе №1: "Реализация серверного приложения FastAPI"
+# Отчёт по лабораторной работе №1: «Реализация серверного приложения FastAPI»
 
-## Тема: "Попутчики" (Travel Companion API)
+## Тема: «Попутчики» (Travel Companion API)
 
 Сервис для поиска попутчиков в путешествия. Пользователи могут создавать поездки,
 подавать заявки на участие, обмениваться сообщениями и оставлять отзывы.
@@ -111,53 +111,53 @@ def get_db():
 
 1. **Клонировать репозиторий:**
 
-```bash
-git clone https://github.com/NordIT-51/TonikX-ITMO_ICT_WebDevelopment_2025-2026.git
-cd TonikX-ITMO_ICT_WebDevelopment_2025-2026/lab1
-```
+   ```bash
+   git clone https://github.com/NordIT-51/TonikX-ITMO_ICT_WebDevelopment_2025-2026.git
+   cd TonikX-ITMO_ICT_WebDevelopment_2025-2026/lab1
+   ```
 
 2. **Создать и активировать виртуальное окружение:**
 
-```bash
-python -m venv venv
-.\venv\Scripts\activate
-```
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # Linux/macOS
+   .\venv\Scripts\activate    # Windows
+   ```
 
 3. **Установить зависимости:**
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 4. **Создать базу данных PostgreSQL:**
 
-```sql
-CREATE DATABASE travel_companion;
-```
+   ```sql
+   CREATE DATABASE travel_companion;
+   ```
 
 5. **Создать файл `.env` с переменными:**
 
-```text
-DATABASE_URL=postgresql://user:password@localhost/travel_companion
-SECRET_KEY=your_secret_key
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=30
-```
+   ```text
+   DATABASE_URL=postgresql://user:password@localhost/travel_companion
+   SECRET_KEY=your_secret_key
+   ALGORITHM=HS256
+   ACCESS_TOKEN_EXPIRE_MINUTES=30
+   ```
 
 6. **Выполнить миграции Alembic:**
 
-```bash
-alembic upgrade head
-```
+   ```bash
+   alembic upgrade head
+   ```
 
 7. **Запустить приложение:**
 
-```bash
-uvicorn app.main:app --reload
-```
+   ```bash
+   uvicorn app.main:app --reload
+   ```
 
 8. Открыть `http://localhost:8000/docs` для тестирования.
-
 
 ---
 
