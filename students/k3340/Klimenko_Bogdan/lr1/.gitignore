@@ -1,0 +1,16 @@
+# Виртуальное окружение
+venv/
+.venv/
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Секреты и конфигурации
+.env
+alembic.ini
+
+# Файлы IDE
+.vscode/
+.idea/
