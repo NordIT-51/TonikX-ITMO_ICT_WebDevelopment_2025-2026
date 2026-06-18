@@ -510,7 +510,7 @@ docker-compose exec celery_worker celery -A app.celery_app call app.tasks.cleanu
 **Рисунок 1** — Swagger документация с новыми эндпоинтами
 
 ![Синхронный парсинг](images/sync_parse.png)
-**Рисунок 2** — Ответ синхронного парсинга для example.com
+**Рисунок 2** — Ответ синхронного парсинга для yandex.ru
 
 ![Асинхронный парсинг](images/async_parse.png)
 **Рисунок 3** — Постановка задачи в очередь и статус выполнения
@@ -570,5 +570,3 @@ docker-compose exec celery_worker celery -A app.celery_app call app.tasks.cleanu
 7. Материалы лекций по Web-программированию (ИТМО)
 
 ---
-
-*Отчёт подготовлен для сдачи лабораторной работы №3 по курсу «Web-программирование».*
